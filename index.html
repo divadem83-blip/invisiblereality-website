@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARt_ifact - The World is Your Canvas</title>
+    <meta name="description"
+        content="A revolutionary AR social platform that combines personal experiences with public content discovery.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="legal.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">ARt_<span>ifact</span></div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#discovery">Discovery</a>
+                <a href="#community">Community</a>
+            </div>
+            <button class="cta-btn secondary">Early Access</button>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">The World is<br><span class="gradient-text">Your Canvas</span></h1>
+            <p class="hero-subtitle">Place, discover, and share digital artifacts in augmented reality. Transform your
+                city into a living canvas of memories and art.</p>
+            <div class="hero-cta-group">
+                <button class="cta-btn primary">Download App</button>
+                <button class="cta-btn outline">Watch Demo</button>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <img src="assets/images/hero_ar_city_1772580767157.png"
+                alt="People interacting with glowing AR objects on a city street" class="hero-image">
+            <div class="glass-card floating-card-1">
+                <div class="icon-pulse"></div>
+                <span>Spatial Audio Detected</span>
+            </div>
+            <div class="glass-card floating-card-2">
+                <div class="icon-pulse blue"></div>
+                <span>New Scene Nearby</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Deep Layer Features Section -->
+    <section class="deep-layer" id="features">
+        <div class="section-container">
+            <h2 class="section-title reveal-fade-up">The <span class="gradient-text">Deep Layer</span></h2>
+            <p class="section-subtitle reveal-fade-up delay-100">A parallel digital universe woven into the physical
+                world, accessible to those
+                who know how to look.</p>
+
+            <!-- Feature 1: Creation -->
+            <div class="feature-row">
+                <div class="feature-text reveal-fade-right">
+                    <div class="feature-badge">Creation</div>
+                    <h3>Leave Your Mark in Reality</h3>
+                    <p>Anchor digital artifacts to physical locations. Whether it's a floating 3D sculpture, a spatial
+                        audio memory, or a glowing neon text sign, your creations persist in the real world.</p>
+                    <ul class="feature-list">
+                        <li><span>✨</span> 3D Models & Sculptures</li>
+                        <li><span>🎵</span> Spatial Audio Memories</li>
+                        <li><span>📸</span> Location-anchored Photos</li>
+                    </ul>
+                </div>
+                <div class="feature-visual reveal-fade-left">
+                    <img src="assets/images/ar_creation.png" alt="AR Creation Process" class="feature-image">
+                    <div class="glow-backdrop primary"></div>
+                </div>
+            </div>
+
+            <!-- Feature 2: Discovery -->
+            <div class="feature-row reverse" id="discovery">
+                <div class="feature-text reveal-fade-left">
+                    <div class="feature-badge secondary">Discovery</div>
+                    <h3>Navigate the Invisible</h3>
+                    <p>Use the Map to find nearby scenes or let the Spatial Compass guide you directly to hidden
+                        artifacts. The world is full of secrets waiting to be uncovered.</p>
+                    <ul class="feature-list">
+                        <li><span>🧭</span> AR Digital Compass</li>
+                        <li><span>🗺️</span> Interactive Discovery Map</li>
+                        <li><span>🎯</span> Hyper-local Navigation</li>
+                    </ul>
+                </div>
+                <div class="feature-visual reveal-fade-right">
+                    <img src="assets/images/compass_ui_element.png" alt="Digital Compass UI" class="feature-image">
+                    <div class="glow-backdrop secondary"></div>
+                </div>
+            </div>
+
+            <!-- Feature 3: Connection -->
+            <div class="feature-row" id="community">
+                <div class="feature-text reveal-fade-right">
+                    <div class="feature-badge alternate">Connection</div>
+                    <h3>A New Way to Connect</h3>
+                    <p>Share experiences exactly where they happened. Leave private messages for specific friends or
+                        public art for the entire community to enjoy.</p>
+                    <ul class="feature-list">
+                        <li><span>🔒</span> Granular Privacy Controls</li>
+                        <li><span>🤝</span> Collaborative Discovery</li>
+                        <li><span>🌍</span> Public Art & Global Community</li>
+                    </ul>
+                </div>
+                <div class="feature-visual reveal-fade-left">
+                    <div class="abstract-connection">
+                        <div class="node n1"></div>
+                        <div class="node n2"></div>
+                        <div class="node n3"></div>
+                        <div class="node n4"></div>
+                        <svg class="connection-lines" viewBox="0 0 100 100" preserveAspectRatio="none">
+                            <line x1="20" y1="20" x2="80" y2="80" stroke="var(--primary-color)" stroke-width="0.5"
+                                stroke-dasharray="2,2" />
+                            <line x1="80" y1="20" x2="20" y2="80" stroke="var(--secondary-color)" stroke-width="0.5"
+                                stroke-dasharray="2,2" />
+                            <line x1="20" y1="50" x2="80" y2="50" stroke="var(--primary-color)" stroke-width="0.5"
+                                stroke-dasharray="2,2" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section class="use-cases" id="use-cases">
+        <div class="section-container">
+            <h2 class="section-title reveal-fade-up">Designed for <span class="gradient-text">Everyone</span></h2>
+            <div class="cards-grid">
+                <div class="use-case-card reveal-fade-up delay-100">
+                    <div class="card-icon">🎨</div>
+                    <h4>Creators & Artists</h4>
+                    <p>Place digital art, 3D models, or "graffiti" in physical locations for the public to find and
+                        admire.</p>
+                </div>
+                <div class="use-case-card reveal-fade-up delay-200">
+                    <div class="card-icon">🗺️</div>
+                    <h4>Explorers & Tourists</h4>
+                    <p>Discover hidden historical facts, vibrant audio guides, and location-anchored community memories.
+                    </p>
+                </div>
+                <div class="use-case-card reveal-fade-up delay-300">
+                    <div class="card-icon">👋</div>
+                    <h4>Friends & Groups</h4>
+                    <p>Leave private, location-anchored memories for each other, like a shared audio message at a
+                        favorite cafe.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy & FAQ Section -->
+    <section class="trust-section" id="trust">
+        <div class="section-container">
+            <div class="trust-grid">
+                <!-- Privacy -->
+                <div class="privacy-box reveal-fade-right">
+                    <h2 class="section-title">Privacy <span class="gradient-text">First</span></h2>
+                    <p>Your data is yours. ARt_ifact is built from the ground up to respect Apple's strict privacy
+                        guidelines.</p>
+                    <ul class="trust-list">
+                        <li><span>🛡️</span> Zero third-party tracking</li>
+                        <li><span>📍</span> Granular location permission controls</li>
+                        <li><span>🔐</span> End-to-end encryption for private content</li>
+                    </ul>
+                </div>
+                <!-- FAQ -->
+                <div class="faq-box reveal-fade-left">
+                    <h3>Frequently Asked Questions</h3>
+                    <div class="faq-item">
+                        <h5>Does this drain my battery?</h5>
+                        <p>We use smart geo-fencing to only activate high-power AR and location services when you are
+                            actively discovering or creating content.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h5>Who can see my artifacts?</h5>
+                        <p>You have full control. Share privately with specific friends, keep them personal, or publish
+                            them publicly for the world.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h5>What devices are supported?</h5>
+                        <p>ARt_ifact requires iOS 26.0+ and runs best on iPhone devices equipped with LiDAR for precise
+                            mesh reconstruction.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA & Footer -->
+    <footer class="footer">
+        <div class="footer-cta reveal-fade-up">
+            <h2 class="section-title">Ready to leave your <span class="gradient-text">mark?</span></h2>
+            <p>Join the waitlist today and be among the first to experience the digital deep layer.</p>
+            <form class="waitlist-form" onsubmit="event.preventDefault(); alert('Thanks for subscribing!');">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="cta-btn primary">Get Early Access</button>
+            </form>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-logo">ARt_<span>ifact</span></div>
+            <div class="social-links">
+                <a href="#twitter">Twitter / X</a>
+                <a href="#discord">Discord</a>
+                <a href="#instagram">Instagram</a>
+            </div>
+            <div class="footer-legal-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+            <p class="copyright">&copy; 2026 ARt_ifact. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
