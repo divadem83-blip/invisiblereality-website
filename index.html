@@ -55,7 +55,7 @@
                 <a href="#discovery">Discovery</a>
                 <a href="#community">Community</a>
             </div>
-            <button class="cta-btn secondary">Early Access</button>
+            <button class="cta-btn secondary" onclick="document.getElementById('early-access').scrollIntoView({ behavior: 'smooth' })">Early Access</button>
             <div class="mobile-menu-btn">
                 <span></span>
                 <span></span>
@@ -71,7 +71,7 @@
             <p class="hero-subtitle">Place, discover, and share digital artifacts in augmented reality. Transform your
                 city into a living canvas of memories and art.</p>
             <div class="hero-cta-group">
-                <button class="cta-btn primary">Download App</button>
+                <button class="cta-btn primary" onclick="document.getElementById('early-access').scrollIntoView({ behavior: 'smooth' })">Get Early Access</button>
                 <button class="cta-btn outline">Watch Demo</button>
             </div>
         </div>
@@ -263,37 +263,15 @@
     <!-- Privacy & FAQ Section -->
     <section class="trust-section" id="trust">
         <div class="section-container">
-            <div class="trust-grid">
-                <!-- Privacy -->
-                <div class="privacy-box reveal-fade-right">
-                    <h2 class="section-title">Privacy <span class="gradient-text">First</span></h2>
-                    <p>Your data is yours. ARt_ifact is built from the ground up to respect Apple's strict privacy
-                        guidelines.</p>
-                    <ul class="trust-list">
-                        <li><span>🛡️</span> Zero third-party tracking</li>
-                        <li><span>📍</span> Granular location permission controls</li>
-                        <li><span>🔐</span> End-to-end encryption for private content</li>
-                    </ul>
-                </div>
-                <!-- FAQ -->
-                <div class="faq-box reveal-fade-left">
-                    <h3>Frequently Asked Questions</h3>
-                    <div class="faq-item">
-                        <h5>Does this drain my battery?</h5>
-                        <p>We use smart geo-fencing to only activate high-power AR and location services when you are
-                            actively discovering or creating content.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h5>Who can see my artifacts?</h5>
-                        <p>You have full control. Share privately with specific friends, keep them personal, or publish
-                            them publicly for the world.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h5>What devices are supported?</h5>
-                        <p>ARt_ifact requires iOS 26.0+ and runs best on iPhone devices equipped with LiDAR for precise
-                            mesh reconstruction.</p>
-                    </div>
-                </div>
+            <div class="privacy-box reveal-fade-right">
+                <h2 class="section-title">Privacy <span class="gradient-text">First</span></h2>
+                <p>Your data is yours. ARt_ifact is built from the ground up to respect Apple's strict privacy
+                    guidelines.</p>
+                <ul class="trust-list">
+                    <li><span>🛡️</span> Zero third-party tracking</li>
+                    <li><span>📍</span> Granular location permission controls</li>
+                    <li><span>🔐</span> End-to-end encryption for private content</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -313,88 +291,9 @@
         </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="faq" id="faq">
-        <div class="section-container">
-            <h2 class="section-title reveal-fade-up">Frequently Asked <span class="gradient-text">Questions</span></h2>
-
-            <div class="faq-category reveal-fade-up">
-                <h3>Getting Started</h3>
-                <details><summary>What is ARt_ifact&trade;?</summary>
-                    <p>ARt_ifact&trade; lets you leave digital content (photos, text, 3D models, audio) at real-world locations. Others can discover and experience your ARt_ifacts by visiting the same place.</p></details>
-                <details><summary>How do I create my first ARt_ifact?</summary>
-                    <ol><li>Tap the AR tab</li><li>Tap the + button</li><li>Choose content type (photo, text, etc.)</li><li>Scan your environment</li><li>Tap to place</li><li>Choose sharing option (Public/Private/Personal)</li></ol></details>
-                <details><summary>Do I need a special phone?</summary>
-                    <p>ARt_ifact runs on modern iPhones. For the current minimum iOS version and supported devices, check the App Store listing. LiDAR-enabled iPhones (iPhone 12 Pro and later) get enhanced AR with faster plane detection.</p></details>
-            </div>
-
-            <div class="faq-category reveal-fade-up">
-                <h3>Placing &amp; Sharing</h3>
-                <details><summary>What&rsquo;s the difference between Public, Private, and Personal?</summary>
-                    <ul><li>Public: Anyone can discover on the map and recreate your scene</li><li>Private: Only people you specifically share with can see it</li><li>Personal: Only you can see it (like a private bookmark)</li></ul></details>
-                <details><summary>Why do I need to scan the area before placing?</summary>
-                    <p>Scanning helps the app understand your space by finding surfaces like floors and walls. This makes sure content is placed correctly and helps others find it later.</p></details>
-                <details><summary>Can I place ARt_ifacts on walls?</summary>
-                    <p>Yes! ARt_ifact supports both horizontal surfaces (tables, floors) and vertical surfaces (walls). Photos and text automatically align with the surface orientation.</p></details>
-                <details><summary>How many ARt_ifacts can I place in one scene?</summary>
-                    <p>You can place unlimited ARt_ifacts in a single scene. Each scene is saved separately and can contain photos, text, 3D models, audio, and graffiti in any combination.</p></details>
-            </div>
-
-            <div class="faq-category reveal-fade-up">
-                <h3>Discovery &amp; Navigation</h3>
-                <details><summary>How do I find ARt_ifacts near me?</summary>
-                    <p>Open the Discover tab to see a map of nearby ARt_ifacts. Blue pins are yours, orange pins are public content from others, and green pins are privately shared with you.</p></details>
-                <details><summary>What does the navigation arrow do?</summary>
-                    <p>The arrow points toward the scene location using your device&rsquo;s compass. Follow it to get close to the ARt_ifact (within 10m is ideal), then scan the area to recreate the scene.</p></details>
-                <details><summary>Why can&rsquo;t I see someone&rsquo;s ARt_ifact?</summary>
-                    <p>You need to be at the original location where it was created. Get within 10 meters, then scan the area. The app uses your camera to find the exact spot and show the content.</p></details>
-                <details><summary>What are scene clusters?</summary>
-                    <p>When multiple scenes are close together, they&rsquo;re grouped into a cluster (shown as a number). Tap the cluster to see all nearby scenes in a list.</p></details>
-            </div>
-
-            <div class="faq-category reveal-fade-up">
-                <h3>Finding Content &amp; Technical</h3>
-                <details><summary>What is relocalization?</summary>
-                    <p>Relocalization is how the app finds the exact spot where you placed content. It uses your camera, GPS, and compass to match your current location to where the content was originally placed.</p></details>
-                <details><summary>Why isn&rsquo;t relocalization working?</summary>
-                    <p>Common issues:</p><ul><li>Too far from original location (try getting within 10 meters)</li><li>Lighting changed a lot</li><li>Furniture moved or things changed</li><li>Not enough clear features to recognize</li></ul><p>Tip: Move slowly and look around the whole area.</p></details>
-                <details><summary>What&rsquo;s the difference between indoor and outdoor scenes?</summary>
-                    <ul><li>Indoor: Uses a 3D map of the space (very precise, needs clear features like walls and furniture)</li><li>Outdoor: Uses GPS and location (less precise, works even when things change)</li></ul><p>The app picks the best method based on where you are.</p></details>
-                <details><summary>Do scenes work after furniture moves?</summary>
-                    <p>Indoor scenes rely on visual features like walls, windows, and floor patterns. If major furniture moves, relocalization may be affected. Outdoor scenes use GPS and are more resilient to changes.</p></details>
-            </div>
-
-            <div class="faq-category reveal-fade-up">
-                <h3>Privacy &amp; Safety</h3>
-                <details><summary>Who can see my ARt_ifacts?</summary>
-                    <ul><li>Public scenes: Anyone using ARt_ifact</li><li>Private scenes: Only people you share with</li><li>Personal scenes: Only you</li></ul><p>You can delete any ARt_ifact at any time from My Content.</p></details>
-                <details><summary>Does ARt_ifact track my location?</summary>
-                    <p>Location is only used when placing or discovering ARt_ifacts. We don&rsquo;t track your movements. Scene locations are stored in CloudKit and only shared according to your privacy choice (Public/Private/Personal).</p></details>
-                <details><summary>How do I report inappropriate content?</summary>
-                    <p>Tap any ARt_ifact, then tap the &middot;&middot;&middot; menu and select &lsquo;Report&rsquo;. We review all reports and remove content that violates our guidelines.</p></details>
-                <details><summary>Can I delete my ARt_ifacts?</summary>
-                    <p>Yes! Go to Settings &rarr; My Content, select the scene, and tap Delete. This removes it from CloudKit and the map immediately.</p></details>
-            </div>
-
-            <div class="faq-category reveal-fade-up">
-                <h3>Troubleshooting</h3>
-                <details><summary>AR isn&rsquo;t detecting any surfaces</summary>
-                    <ul><li>Move your device slowly left and right</li><li>Ensure good lighting</li><li>Point at textured surfaces (not blank walls)</li><li>Make sure camera lens is clean</li><li>Restart the app if needed</li></ul></details>
-                <details><summary>My ARt_ifact disappeared after placing</summary>
-                    <p>Check that you chose a sharing option (Public/Private/Personal). If you dismissed the share sheet without selecting, the scene wasn&rsquo;t saved. Try placing again and complete the sharing flow.</p></details>
-                <details><summary>Scanning is slow or not working</summary>
-                    <ul><li>Ensure good lighting (AR works poorly in dim environments)</li><li>Clean your camera lens</li><li>Close other AR apps</li><li>Restart your device</li><li>Update to the latest iOS version</li></ul></details>
-                <details><summary>CloudKit sync isn&rsquo;t working</summary>
-                    <p>Go to Settings &rarr; CloudKit and check:</p><ul><li>CloudKit is enabled</li><li>You&rsquo;re signed in to iCloud</li><li>You have internet connection</li><li>Tap &lsquo;Force Sync&rsquo; to manually sync</li></ul><p>Note: First sync can take a few moments.</p></details>
-            </div>
-
-            <p class="faq-contact reveal-fade-up">Still need help? Contact us at <a href="mailto:david.m@invisiblereality.org">david.m@invisiblereality.org</a>.</p>
-        </div>
-    </section>
-
     <!-- CTA & Footer -->
     <footer class="footer">
-        <div class="footer-cta reveal-fade-up">
+        <div class="footer-cta reveal-fade-up" id="early-access">
             <h2 class="section-title">Ready to leave your <span class="gradient-text">mark?</span></h2>
             <p>Join the waitlist today and be among the first to experience the digital deep layer.</p>
             <form class="waitlist-form" action="https://api.web3forms.com/submit" method="POST">
@@ -415,6 +314,7 @@
                 <a href="#instagram">Instagram</a>
             </div>
             <div class="footer-legal-links">
+                <a href="faq.html">FAQ</a>
                 <a href="privacy.html">Privacy Policy</a>
                 <a href="terms.html">Terms of Service</a>
             </div>
