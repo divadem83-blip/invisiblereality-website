@@ -888,3 +888,184 @@ h4 {
         grid-template-columns: 1fr;
     }
 }
+
+/* ===== Ghost Scenes / Trust & Safety / FAQ (additive — new sections only) ===== */
+.ghost,
+.trust-safety,
+.faq {
+    padding: 8rem 2rem;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ghost-shot {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 3rem;
+    border-radius: 24px;
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+.ghost-states {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.ghost-state {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 18px;
+    padding: 1.75rem;
+}
+
+.ghost-state strong {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    margin-bottom: 0.6rem;
+    color: var(--secondary-color);
+}
+
+.ghost-state span {
+    color: var(--text-secondary);
+    font-size: 0.98rem;
+    line-height: 1.6;
+}
+
+.ghost-tertiary {
+    text-align: center;
+    color: var(--text-secondary);
+    max-width: 620px;
+    margin: 3rem auto 0;
+    font-size: 1.05rem;
+}
+
+.safety-grid {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.safety-grid li {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 18px;
+    padding: 1.75rem;
+}
+
+.safety-grid strong {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.safety-grid span {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.safety-note {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-top: 2.5rem;
+}
+
+.safety-note a,
+.faq-contact a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.faq-category {
+    max-width: 820px;
+    margin: 0 auto 2.5rem;
+}
+
+.faq-category h3 {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    margin: 0 0 1rem;
+    color: var(--text-primary);
+}
+
+.faq details {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 14px;
+    margin-bottom: 0.75rem;
+    padding: 0 1.25rem;
+}
+
+.faq summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 1.1rem 2rem 1.1rem 0;
+    font-weight: 600;
+    color: var(--text-primary);
+    position: relative;
+}
+
+.faq summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq summary::after {
+    content: '+';
+    position: absolute;
+    right: 0.25rem;
+    top: 0.95rem;
+    color: var(--secondary-color);
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+.faq details[open] summary::after {
+    content: '\2212';
+}
+
+.faq details p,
+.faq details ul,
+.faq details ol {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin: 0 0 1rem;
+}
+
+.faq details ul,
+.faq details ol {
+    padding-left: 1.25rem;
+}
+
+.faq details > :last-child {
+    margin-bottom: 1.1rem;
+}
+
+.faq-contact {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-top: 2rem;
+}
+
+@media (max-width: 900px) {
+    .ghost-states {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 560px) {
+
+    .ghost,
+    .trust-safety,
+    .faq {
+        padding: 5rem 1.25rem;
+    }
+}
