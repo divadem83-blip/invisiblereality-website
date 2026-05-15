@@ -7,6 +7,34 @@
     <title>ARt_ifact - The World is Your Canvas</title>
     <meta name="description"
         content="A revolutionary AR social platform that combines personal experiences with public content discovery.">
+
+    <link rel="canonical" href="https://invisiblereality.org/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="ARt_ifact - The World is Your Canvas">
+    <meta property="og:description" content="A revolutionary AR social platform that combines personal experiences with public content discovery.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://invisiblereality.org/">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="ARt_ifact - The World is Your Canvas">
+    <meta name="twitter:description" content="A revolutionary AR social platform that combines personal experiences with public content discovery.">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "ARt_ifact",
+      "operatingSystem": "iOS",
+      "applicationCategory": "SocialNetworkingApplication",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "description": "A revolutionary AR social platform that combines personal experiences with public content discovery.",
+      "url": "https://invisiblereality.org/",
+      "publisher": { "@type": "Organization", "name": "Enigmatic Solutions LLC", "url": "https://invisiblereality.org/" }
+    }
+    </script>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -210,9 +238,14 @@
         <div class="footer-cta reveal-fade-up">
             <h2 class="section-title">Ready to leave your <span class="gradient-text">mark?</span></h2>
             <p>Join the waitlist today and be among the first to experience the digital deep layer.</p>
-            <form class="waitlist-form" onsubmit="event.preventDefault(); alert('Thanks for subscribing!');">
-                <input type="email" placeholder="Enter your email address" required>
+            <form class="waitlist-form" action="https://formsubmit.co/david.m@invisiblereality.org" method="POST">
+                <input type="email" name="email" placeholder="Enter your email address" required>
                 <button type="submit" class="cta-btn primary">Get Early Access</button>
+                <input type="hidden" name="_subject" value="ARt_ifact early-access request">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="https://invisiblereality.org/?subscribed=1">
+                <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
             </form>
         </div>
         <div class="footer-bottom">
