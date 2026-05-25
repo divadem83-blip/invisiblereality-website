@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["AU749S5779.org.invisiblereality.artifact.app"],
+        "components": [
+          {
+            "/": "/scene/*",
+            "comment": "Open AR scene preview in the ARtifiact app"
+          }
+        ]
+      }
+    ]
+  }
+}
